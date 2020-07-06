@@ -1,0 +1,19 @@
+import Layout from 'lib/components/layout';
+import { Button } from '@zeit-ui/react';
+
+export const meta = {
+  title: '关于我',
+  date: '2020-01-01',
+  description: '',
+};
+
+Hi, I'm Trent.
+
+A web developer and currently located in China.
+
+Write code is only hobby of my life when I was a kid, I like this felling about creating things as maker. When i grow up, rugby also brings some passion for me, fighting is one of the most wonderful things in this world.
+
+By the way, the uses of this blog are for record some thoughts, stories and ideas.
+You can ping me on [Twitter](https://twitter.com/tttl_te) if you need contact me, that's all.
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>;

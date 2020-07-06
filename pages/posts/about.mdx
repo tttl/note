@@ -1,0 +1,12 @@
+import Layout from 'lib/components/layout';
+import { Button } from '@zeit-ui/react';
+
+export const meta = {
+  title: 'Hello World',
+  date: '2020-07-04',
+  description: '',
+};
+
+我记得的是我看到了一个卡通片，里面有一个鸡蛋和一只母鸡，并且母鸡说: "Hello, World"。
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
