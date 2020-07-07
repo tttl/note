@@ -1,12 +1,17 @@
-import Layout from 'lib/components/layout';
-import { Button } from '@zeit-ui/react';
+import Layout from 'lib/components/layout'
+import { Card, Image, Text } from '@zeit-ui/react'
 
 export const meta = {
   title: 'Hello World',
   date: '2020-07-04',
   description: '',
-};
+}
 
-我记得的是我看到了一个卡通片，里面有一个鸡蛋和一只母鸡，并且母鸡说: "Hello, World"。
+<Card shadow width="400px">
+  <Image src="/assets/tree.jpg"  width={400} height={400} style={{ objectFit: 'cover' }} />
+  <Card.Footer>
+     <Text small del>UNSPLASH</Text>
+  </Card.Footer>
+</Card>
 
-export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
